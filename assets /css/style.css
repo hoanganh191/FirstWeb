@@ -8,4 +8,39 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ================Common==================== */
+a {
+    text-decoration: none;
+}
+
+/* ================Header==================== */
+.header-body {
+    display: flex;
+    align-items: center;
+    margin: 1vh;
+}
+
+.nav {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav ul {
+    display: flex;
+    gap: 5vw;
+}
+
+.logo {
+    margin-left: 2vw;
+}
+
+
+.action {
+    margin-left: 8vw;
+    margin-right: 5vw;
 }
