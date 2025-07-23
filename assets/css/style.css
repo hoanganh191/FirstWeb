@@ -9,7 +9,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    background-color: #FFFCF4;
+    /* background-color: #FFFCF4; */
     min-width: 600px;
 }
 
@@ -42,7 +42,7 @@ a {
     height: 10vh;
     background-color: #FFFCF4;
     top: -2vh;
-    margin-bottom: 5vh;
+    padding-bottom: 5vh;
 }
 
 .header-body {
@@ -88,7 +88,7 @@ a {
 
 .header .action {
     margin-left: 5vw;
-    margin-right: 5vw;
+    margin-right: 1.5vw;
     flex-shrink: 0;
 
 }
@@ -108,47 +108,71 @@ a {
 }
 
 /* ================Hero==================== */
-/* Media-Block */
-.hero {
-    height: 85vh;
-    display: flex;
-    align-items: flex-start;
-    gap: 10vw;
+
+main .box-around-hero {
+    background-color: #FFFCF4;
 }
 
+.hero {
+    padding-top: 5vh;
+    height: 90vh;
+    display: flex;
+    align-items: flex-start;
+    /* gap: 5vw; */
+}
+
+/* Media-Block */
 .hero .media-block {
     display: flex;
     position: relative;
-    width: 50vw;
+    width: 40vw;
     min-width: 300px;
+    height: 100%;
 }
 
-.hero .media-block img {
-    width: 100%;
-    height: 100%;
+.hero .media-block #img-main-hero {
+    width: 70%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 0%;
     flex-shrink: 0;
 }
 
 .hero .media-block .content-media {
     position: absolute;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
     height: 40%;
-    width: 60%;
-    bottom: 3%;
-    left: 60%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    bottom: 10%;
+    left: 40%;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
 }
 
 .hero .media-block .list-media {
     display: flex;
+    align-items: center;
 }
 
-.list-media .icon {
-    height: 1rem;
+.hero .media-block .list-media .icon {
+    height: 30%;
+    width: 30%;
+    border-radius: 2rem;
+    display: inline-block;
+}
+
+.hero .media-block .list-media .icon img {
+    border-radius: 20px;
+    width: 50%;
+    height: 40%;
 }
 
 /* Content Block */
+.hero .content-block {
+    width: 60vw;
+}
+
 .hero .content-block h1 {
     color: #171100;
     font-family: Sen;
@@ -160,7 +184,7 @@ a {
     letter-spacing: -1.16px;
 }
 
-.hero .content-block h3 {
+.hero .content-block .desc {
     color: #5F5B53;
     font-family: Poppins;
     font-size: 1.8rem;
@@ -170,11 +194,12 @@ a {
     /* 166.667% */
 }
 
-.hero .content-block .cousce {
+.hero .content-block .coursces {
+    margin-top: 5vh;
     display: inline-block;
     padding: 1vh 2vw;
     background-color: #000000;
-    color: #f67b20;
+    color: #FFFFFF;
     border-radius: 2rem;
     font-weight: 500;
 }
