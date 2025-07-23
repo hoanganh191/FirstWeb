@@ -118,32 +118,32 @@ main .box-around-hero {
     height: 90vh;
     display: flex;
     align-items: flex-start;
-    /* gap: 5vw; */
+    gap: 10vw;
 }
 
 /* Media-Block */
 .hero .media-block {
     display: flex;
     position: relative;
-    width: 40vw;
-    min-width: 300px;
+    width: 30vw;
+    min-width: 220px;
     height: 100%;
 }
 
 .hero .media-block #img-main-hero {
-    width: 70%;
+    width: 95%;
     height: 95%;
     object-fit: cover;
-    border-radius: 0%;
+    border-radius: 8%;
     flex-shrink: 0;
 }
 
 .hero .media-block .content-media {
     position: absolute;
     height: 40%;
-    width: 40%;
+    width: 48%;
     bottom: 10%;
-    left: 40%;
+    right: -20%;
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
