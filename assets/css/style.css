@@ -28,12 +28,13 @@ a {
 }
 
 .box-format {
-    padding-left: 4vw;
-    padding-right: 2vw;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    width: 100vw;
+    background: #FFFCF4;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 /* ================Header==================== */
@@ -115,6 +116,9 @@ main .box-around-hero {
 }
 
 .hero {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 5vh;
     height: 90vh;
     display: flex;
