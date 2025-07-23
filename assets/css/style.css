@@ -111,6 +111,7 @@ a {
 
 main .box-around-hero {
     background-color: #FFFCF4;
+
 }
 
 .hero {
@@ -125,7 +126,7 @@ main .box-around-hero {
 .hero .media-block {
     display: flex;
     position: relative;
-    width: 30vw;
+    width: 40vw;
     min-width: 220px;
     height: 100%;
 }
@@ -134,38 +135,81 @@ main .box-around-hero {
     width: 95%;
     height: 95%;
     object-fit: cover;
-    border-radius: 8%;
+    border-radius: 24px;
     flex-shrink: 0;
 }
 
 .hero .media-block .content-media {
     position: absolute;
     height: 40%;
-    width: 48%;
+    width: 60%;
     bottom: 10%;
     right: -20%;
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 160px;
+    min-height: 180px;
 }
 
 .hero .media-block .list-media {
     display: flex;
     align-items: center;
+    padding: 5%;
+    gap: 10%;
 }
 
 .hero .media-block .list-media .icon {
-    height: 30%;
-    width: 30%;
-    border-radius: 2rem;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 3vw;
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 50%;
 }
 
-.hero .media-block .list-media .icon img {
-    border-radius: 20px;
-    width: 50%;
-    height: 40%;
+.hero .media-block .list-media+.list-media {
+    margin-top: -2%;
+}
+
+.hero .media-block .icon1 {
+    background-color: #FFF9E8;
+}
+
+.hero .media-block .icon2 {
+    background-color: #FCEFFF;
+}
+
+.hero .media-block .icon3 {
+    background-color: #EBEAFF;
+}
+
+.hero .media-block .list-about .label {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.67;
+    /* 166.667% */
+}
+
+.hero .media-block .list-about .title {
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
 }
 
 /* Content Block */
@@ -179,7 +223,7 @@ main .box-around-hero {
     font-size: 5.8rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 68px;
+    line-height: 1.17;
     /* 117.241% */
     letter-spacing: -1.16px;
 }
@@ -190,7 +234,7 @@ main .box-around-hero {
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.66;
     /* 166.667% */
 }
 
