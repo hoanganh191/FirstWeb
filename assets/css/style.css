@@ -127,7 +127,7 @@ main .box-around-hero {
 .hero .media-block {
     display: flex;
     position: relative;
-    width: 40vw;
+    width: 40%;
     min-width: 220px;
     height: 100%;
 }
@@ -168,12 +168,8 @@ main .box-around-hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3vw;
-    height: 3vw;
-    min-width: 32px;
-    min-height: 32px;
-    max-width: 64px;
-    max-height: 64px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
 }
 
@@ -215,7 +211,7 @@ main .box-around-hero {
 
 /* Content Block */
 .hero .content-block {
-    width: 60vw;
+    width: 60%;
 }
 
 .hero .content-block h1 {
