@@ -28,6 +28,12 @@ a {
     text-align: center;
 }
 
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .box-format {
     width: 100vw;
     position: relative;
@@ -47,11 +53,8 @@ a {
 .header-body {
     display: flex;
     align-items: center;
-    padding: 0 24px;
-    max-width: 1200px;
+    padding: 0 2.4rem;
     min-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
     height: 100%;
 }
 
@@ -112,11 +115,11 @@ main .box-around-hero {
 }
 
 .hero {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 60px;
-    height: 90vh;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    height: calc(100vh - 9.2rem);
     min-height: 680px;
     display: flex;
     align-items: center;
@@ -248,7 +251,7 @@ main .box-around-hero {
     font-style: normal;
     font-weight: 600;
     line-height: 1.66;
-    min-width: 180px;
+    min-width: 18rem;
     padding: 17px 30px;
     /* 166.667% */
 }
@@ -256,7 +259,7 @@ main .box-around-hero {
 .hero .content-block .watch-box {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 2rem;
     border: none;
     background: transparent;
     cursor: pointer;
@@ -269,8 +272,8 @@ main .box-around-hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     background: #fff;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
@@ -286,4 +289,10 @@ main .box-around-hero {
     border-left: 16px solid #FFB900;
     border-radius: 2px;
     margin-left: 4px;
+}
+
+.hero .content-block .watch-box span {
+    font-size: 1.8rem;
+    line-height: 1.66;
+
 }
