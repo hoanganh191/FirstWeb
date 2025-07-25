@@ -28,12 +28,9 @@ a {
 
 .box-format {
     width: 100vw;
-    background: #FFFCF4;
     position: relative;
     left: 50%;
-    right: 50%;
     margin-left: -50vw;
-    margin-right: -50vw;
 }
 
 /* ================Header==================== */
