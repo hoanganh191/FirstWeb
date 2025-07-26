@@ -235,13 +235,13 @@ main .box-around-hero {
     font-weight: 400;
     line-height: 1.66;
     /* 166.667% */
-    margin-bottom: 3.8rem;
+    margin-bottom: 2.8rem;
 }
 
 .hero .content-block .list-button {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 2.8rem;
 }
 
 .hero .content-block .coursces {
@@ -294,5 +294,31 @@ main .box-around-hero {
 .hero .content-block .watch-box span {
     font-size: 1.8rem;
     line-height: 1.66;
+}
 
+.hero .content-block .content-about {
+    margin-top: 2.8rem;
+}
+
+.hero .content-block .content-about>.desc {
+    margin-bottom: 0.3rem;
+}
+
+.hero .content-block .content-about .stats {
+    display: flex;
+    gap: 2.8rem;
+}
+
+.hero .content-block .content-about .stats .desc {
+    margin-top: 0;
+}
+
+.hero .content-block .stats strong {
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.22;
+    /* 122.727% */
 }
