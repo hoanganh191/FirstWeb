@@ -322,3 +322,27 @@ main .box-around-hero {
     line-height: 1.22;
     /* 122.727% */
 }
+
+.box-popular {
+    background-color: #FFF;
+}
+
+.popular {
+    height: 100vh;
+}
+
+.popular>h1 {
+    padding-top: 10rem;
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.8rem;
+    /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.popular>p {
+    color: #5F5B53;
+}
