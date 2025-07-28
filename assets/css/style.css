@@ -59,6 +59,25 @@ a {
     padding-bottom: 1.6rem;
 }
 
+/* Card-Box-Format */
+.box-card {
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+}
+
+.box-card .card-img {
+    border-radius: 12px 12px 0 0;
+}
+
+.box-card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+
 /* ================Header==================== */
 .header.fixed {
     position: sticky;
@@ -262,7 +281,7 @@ main .box-around-hero {
     gap: 2.8rem;
 }
 
-.hero .content-block .coursces {
+.hero .content-block .course {
     border-radius: 32px;
     background: #FFB900;
     font-size: 1.8rem;
@@ -400,21 +419,18 @@ main .box-around-hero {
     align-items: center;
 }
 
-.popular .list-service .service-box {
+.popular .list-service .box-card {
     height: 90%;
     width: 30%;
-    border-radius: 12px;
-    background: #FFF;
-    box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+
 }
 
-.popular .list-service .service-box .card-img {
+.popular .list-service .box-card .card-img {
     width: 100%;
     height: 60%;
-    border-radius: 12px 12px 0 0;
 }
 
-.popular .list-service .service-box .card-img img {
+.popular .list-service .box-card .card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
