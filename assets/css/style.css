@@ -41,12 +41,25 @@ a {
     margin-left: -50vw;
 }
 
+.heading-lv2 {
+    /* padding-top: 10rem; */
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.8rem;
+    /* 126.316% */
+    letter-spacing: -0.76px;
+    padding-bottom: 1.6rem;
+}
+
 /* ================Header==================== */
 .header.fixed {
     position: sticky;
-    height: 9.2rem;
+    height: 6.2rem;
     background-color: #FFFCF4;
-    top: -1rem;
+    top: -0.25rem;
     z-index: 1;
 }
 
@@ -115,11 +128,11 @@ main .box-around-hero {
 }
 
 .hero {
-    padding-top: 4rem;
+    padding-top: 6rem;
     padding-bottom: 2rem;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
-    height: calc(100vh - 9.2rem);
+    height: calc(100vh - 6.2rem);
     min-height: 680px;
     display: flex;
     align-items: center;
@@ -323,26 +336,36 @@ main .box-around-hero {
     /* 122.727% */
 }
 
+/* ================Popular==================== */
+
 .box-popular {
     background-color: #FFF;
 }
 
 .popular {
     height: 100vh;
+    padding: 6.5rem 0;
 }
 
-.popular>h1 {
-    padding-top: 10rem;
-    color: #171100;
-    font-family: Sen;
-    font-size: 3.8rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 4.8rem;
-    /* 126.316% */
-    letter-spacing: -0.76px;
+/* Text */
+.popular .heading-lv2 {
+    /* padding-top: 10rem; */
 }
 
-.popular>p {
+.popular .head-popular .title>p {
     color: #5F5B53;
+}
+
+.popular .list-service {
+    margin-top: 5.5rem;
+    height: 70%;
+    background-color: #5F5B53;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular .list-service .service-box {
+    height: 100%;
+    width: 30%;
+    background-color: aqua;
 }
