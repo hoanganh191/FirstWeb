@@ -38,6 +38,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding: 6.5rem 2.4rem;
+    flex-shrink: 0;
 }
 
 .box-format {
@@ -45,6 +46,7 @@ a {
     position: relative;
     left: 50%;
     margin-left: -50vw;
+    flex-shrink: 0;
 }
 
 .heading-lv2 {
@@ -392,7 +394,7 @@ a {
 
 /* ================Popular==================== */
 .popular {
-    background-color: #FFF;;
+    background-color: #FFF;
 }
 
 .popular-body {
@@ -504,4 +506,56 @@ a {
 .popular .list-service .card-content .btn-book:hover {
     background-color: var(--color-main);
     color: #fff;
+}
+
+/* ================Feedback==================== */
+.feedback {
+    background-color: #2E2100;
+}
+
+.feedback-body {
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback .info .avt {
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.feedback .info h3 {
+    margin-top: 1.8rem;
+    color: #F7F7F7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.41;
+}
+
+.feedback .info p {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+    padding-top: 0.4rem;
+}
+
+.feedback .box-quote .quote {
+    color: #FFF;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    /* 153.846% */
 }
