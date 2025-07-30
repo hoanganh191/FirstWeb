@@ -395,10 +395,11 @@ a {
 /* ================Popular==================== */
 .popular {
     background-color: #FFF;
+    height: 100vh;
 }
 
 .popular-body {
-    height: 100vh;
+    height: 100%;
     background-color: #FFF;
 }
 
@@ -589,5 +590,62 @@ a {
     font-size: 2.6rem;
     font-style: italic;
     font-weight: 400;
-    line-height: 1.54; /* 40px / 26px */
+    line-height: 1.54;
+    /* 40px / 26px */
 }
+
+.feature1 {
+    background-color: #FFF;
+    height: calc(100vh - 6rem);
+}
+
+.feature1 .feature1-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Image Block */
+.feature1 .image-block {
+    width: 47%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+
+}
+
+.feature1 .image-block .feature-img {
+    border-radius: 16px;
+    object-fit: cover;
+    width: 47%;
+    height: 100%;
+}
+
+.feature1 .image-block .feature-img2 {
+    position: relative;
+    top: -10%;
+}
+
+/* Media-block */
+.feature1 .media-block {
+    width: 45%;
+    min-width: 220px;
+}
+
+.feature1 .media-block p + p {
+    margin-top: 1.6rem;
+}
+.feature1 .btn-feature {
+    margin-top: 3.2rem;
+    padding: 1.1rem 2.4rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 2.6rem;
+    background: var(--color-main);
+}
+
+
