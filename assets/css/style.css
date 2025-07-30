@@ -506,6 +506,7 @@ a {
 .popular .list-service .card-content .btn-book:hover {
     background-color: var(--color-main);
     color: #fff;
+    transition: background-color 0.3s ease;
 }
 
 /* ================Feedback==================== */
@@ -514,13 +515,14 @@ a {
 }
 
 .feedback-body {
-    height: 35vh;
+    height: 40vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .feedback .info {
-    width: 50%;
+    width: 20%;
     display: flex;
     flex-direction: column;
 }
@@ -551,11 +553,41 @@ a {
     padding-top: 0.4rem;
 }
 
+.feedback .info .dots {
+    padding-top: 2.8rem;
+    display: flex;
+    gap: 1.8rem;
+    cursor: pointer;
+}
+
+.feedback .info .dots .dot:hover {
+    background-color: #FFB900;
+    transition: background-color 0.3s ease;
+}
+
+.feedback .info .dots .dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #634700;
+}
+
+.feedback .box-quote {
+    /* Gán chiều rộng để giới hạn không gian của box-quote */
+    width: 70%;
+    position: relative;
+}
+
+.feedback .box-quote img {
+    position: absolute;
+    top: -2.5rem;
+    left: -2.5rem;
+}
+
 .feedback .box-quote .quote {
     color: #FFF;
-    font-size: 26px;
+    font-size: 2.6rem;
     font-style: italic;
     font-weight: 400;
-    line-height: 40px;
-    /* 153.846% */
+    line-height: 1.54; /* 40px / 26px */
 }
