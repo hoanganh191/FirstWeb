@@ -721,7 +721,8 @@ a {
     align-items: flex-start;
 }
 
-.blog .card-content .title {
+/* Style cho link của tiêu đề bài blog (chọn thẻ a không phải là nút .btn) */
+.blog .card-content > a:not(.btn) {
     color: #171100;
 }
 
