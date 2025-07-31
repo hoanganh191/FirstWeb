@@ -636,11 +636,12 @@ a {
     min-width: 220px;
 }
 
-.feature1 .media-block p + p {
+.feature1 .media-block p+p {
     margin-top: 1.6rem;
 }
+
 .feature .btn-feature {
-    margin-top: 3.2rem;
+    margin-top: 2rem;
     padding: 1.1rem 2.4rem;
     color: #FFF;
     text-align: center;
@@ -675,4 +676,65 @@ a {
 
 .feature2 .media-block {
     width: 47%;
+}
+
+/* ================Blog==================== */
+.blog {
+    background-color: #FFF;
+    height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.blog .blog-body {
+    width: 100%;
+}
+
+.blog .list-service {
+    /* Xóa height để chiều cao tự động theo nội dung */
+    /* width: 100%; */ /* Thuộc tính này không cần thiết vì .blog-body đã có width 100% */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.5rem;
+}
+
+
+
+.blog .top-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.blog .top-blog .desc {
+    text-align: center;
+
+}
+
+/* Style cho nội dung card trong blog */
+.blog .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem 2.2rem;
+}
+
+.blog .card-date {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 1.2rem;
+    color: #5F5B53;
+    font-size: 1.4rem;
+}
+
+.blog .card-date::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-main);
+    margin-right: 0.8rem;
 }
