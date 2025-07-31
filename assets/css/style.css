@@ -394,25 +394,23 @@ a {
 
 /* ================Popular==================== */
 .popular {
-    background-color: #FFF;
-    height: 100vh;
+	/* Xóa height: 100vh để chiều cao tự động theo nội dung */
+	background-color: #fff;
+	padding: 6.5rem 0;
 }
 
 .popular-body {
-    height: 100%;
     background-color: #FFF;
 }
 
 /* Head-Popular */
-.popular .head-popular {
-    margin-top: 5.5rem;
-}
 
 .popular .head-popular {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 
 .popular .head-popular .title>p {
     color: #5F5B53;
@@ -445,9 +443,9 @@ a {
 /* Card-Popular */
 .popular .list-service {
     margin-top: 6.5rem;
-    height: 60%;
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap; /* Cho phép các card xuống dòng */
+	gap: 3rem; /* Tạo khoảng cách giữa các card */
 }
 
 .popular .list-service .card-content {
@@ -508,6 +506,29 @@ a {
     background-color: var(--color-main);
     color: #fff;
     transition: background-color 0.3s ease;
+}
+
+/* ================ Responsive for Popular ================ */
+/* PC low resolution & Tablet */
+@media (max-width: 991px) {
+	.popular .box-card {
+		/* Hiển thị 2 card mỗi hàng */
+		width: calc(50% - 1.5rem);
+	}
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+	.popular .head-popular {
+		flex-direction: column; /* Xếp chồng tiêu đề và nút */
+		align-items: flex-start;
+		gap: 2rem;
+	}
+
+	.popular .box-card {
+		/* Hiển thị 1 card mỗi hàng */
+		width: 100%;
+	}
 }
 
 /* ================Feedback==================== */
