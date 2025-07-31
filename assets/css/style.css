@@ -682,8 +682,8 @@ a {
 .blog {
     background-color: #FFF;
     height: 100vh;
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .blog .blog-body {
@@ -692,12 +692,12 @@ a {
 
 .blog .list-service {
     /* Xóa height để chiều cao tự động theo nội dung */
-    /* width: 100%; */ /* Thuộc tính này không cần thiết vì .blog-body đã có width 100% */
+    /* width: 100%; */
+    /* Thuộc tính này không cần thiết vì .blog-body đã có width 100% */
     display: flex;
     justify-content: space-between;
     margin-top: 5.5rem;
 }
-
 
 
 .blog .top-blog {
@@ -717,7 +717,12 @@ a {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: 1.6rem 2.2rem;
+    padding: 2.6rem 2.2rem;
+    align-items: flex-start;
+}
+
+.blog .card-content .title {
+    color: #171100;
 }
 
 .blog .card-date {
@@ -737,4 +742,15 @@ a {
     border-radius: 50%;
     background: var(--color-main);
     margin-right: 0.8rem;
+}
+
+.blog .btn-read {
+    margin-top: 1.2rem;
+    padding: 1.6rem 2.4rem;
+}
+
+.blog .btn-read:hover {
+    background-color: var(--color-main);
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
