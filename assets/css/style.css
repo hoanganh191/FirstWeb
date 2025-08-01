@@ -15,8 +15,9 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
     min-width: 600px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
+
 
 /* ================Common==================== */
 a {
@@ -41,13 +42,6 @@ a {
     flex-shrink: 0;
 }
 
-.box-format {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-    flex-shrink: 0;
-}
 
 .heading-lv2 {
     color: #171100;
@@ -66,8 +60,7 @@ a {
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
-    width: 30%;
-    min-height: 40rem;
+    width: calc(33.33% - 2rem);
     display: flex;
     flex-direction: column;
 }
@@ -142,7 +135,7 @@ a {
 
 .nav a {
     display: inline-block;
-    padding: 12px 20px;
+    padding: 1.2rem 2rem;
     color: #5f5b53;
     position: relative;
 }
@@ -158,8 +151,7 @@ a {
 
 
 .header .action {
-    margin-left: 48px;
-    flex-shrink: 0;
+    margin-left: max(3vw, 2rem);
 
 }
 
@@ -176,6 +168,12 @@ a {
     position: absolute;
     left: 20px;
     bottom: 6px;
+}
+
+@media (max-width: 767px) {
+    header {
+        display: none;
+    }
 }
 
 /* ================Hero==================== */
@@ -394,9 +392,8 @@ a {
 
 /* ================Popular==================== */
 .popular {
-	/* Xóa height: 100vh để chiều cao tự động theo nội dung */
-	background-color: #fff;
-	padding: 6.5rem 0;
+    /* Xóa height: 100vh để chiều cao tự động theo nội dung */
+    background-color: #fff;
 }
 
 .popular-body {
@@ -443,10 +440,12 @@ a {
 /* Card-Popular */
 .popular .list-service {
     margin-top: 6.5rem;
-	display: flex;
-	flex-wrap: wrap; /* Cho phép các card xuống dòng */
+    display: flex;
+    flex-wrap: wrap;
+    /* Cho phép các card xuống dòng */
     justify-content: space-between;
-	gap: 3rem; /* Tạo khoảng cách giữa các card */
+    gap: 3rem;
+    /* Tạo khoảng cách giữa các card */
 }
 
 .popular .list-service .card-content {
@@ -512,28 +511,34 @@ a {
 /* ================ Responsive for Popular ================ */
 /* PC low resolution & Tablet */
 @media (max-width: 991px) {
-	.popular .box-card {
-		/* Hiển thị 2 card mỗi hàng */
-		width: calc(50% - 1.5rem);
-	}
+    .popular .box-card {
+        /* Hiển thị 2 card mỗi hàng */
+        width: calc(50% - 1.5rem);
+    }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
-	.popular .head-popular {
-		flex-direction: column; /* Xếp chồng tiêu đề và nút */
-		align-items: flex-start;
-		gap: 2rem;
-	}
+    .popular .head-popular {
+        flex-direction: column;
+        /* Xếp chồng tiêu đề và nút */
+        align-items: flex-start;
+        gap: 2rem;
+    }
 
-	.popular .box-card {
-		/* Hiển thị 1 card mỗi hàng */
-		width: 100%;
-	}
+    .popular .head-popular .list-button {
+        align-self: stretch;
+        justify-content: space-between;
+    }
 
-	.blog .box-card {
-		width: 100%;
-	}
+    .popular .box-card {
+        /* Hiển thị 1 card mỗi hàng */
+        width: 100%;
+    }
+
+    .popular .box-card .price-book {
+        margin-bottom: 2rem;
+    }
 }
 
 /* ================Feedback==================== */
@@ -624,10 +629,11 @@ a {
 /* ================Feature==================== */
 /* --Feature 1-- */
 .feature1 {
-	background-color: #FFF;
-	/* Bỏ height, thay bằng padding để linh hoạt */
-	padding: 6.5rem 0;
-	margin-top: 7rem; /* Thêm khoảng cách với section feedback */
+    background-color: #FFF;
+    /* Bỏ height, thay bằng padding để linh hoạt */
+    padding: 6.5rem 0;
+    margin-top: 7rem;
+    /* Thêm khoảng cách với section feedback */
 }
 
 .feature .feature-body {
@@ -687,9 +693,9 @@ a {
 
 /* --Feature 2-- */
 .feature2 {
-	background-color: #FFF;
-	/* Bỏ height, thay bằng padding để linh hoạt */
-	padding: 6.5rem 0;
+    background-color: #FFF;
+    /* Bỏ height, thay bằng padding để linh hoạt */
+    padding: 6.5rem 0;
 }
 
 
@@ -710,9 +716,7 @@ a {
 
 /* ================Blog==================== */
 .blog {
-	background-color: #FFF;
-	/* Bỏ height, thay bằng padding để linh hoạt */
-	padding: 6.5rem 0;
+    background-color: #FFF;
 }
 
 .blog .blog-body {
@@ -723,6 +727,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-top: 5.5rem;
+    flex-wrap: wrap;
 }
 
 
@@ -748,7 +753,7 @@ a {
 }
 
 /* Style cho link của tiêu đề bài blog (chọn thẻ a không phải là nút .btn) */
-.blog .card-content > a:not(.btn) {
+.blog .card-content>a:not(.btn) {
     color: #171100;
 }
 
@@ -781,3 +786,28 @@ a {
     color: #fff;
     transition: background-color 0.3s ease;
 }
+
+/*  --Responsive for Blog--  */
+/* Tablet: 2 columns */
+@media (max-width: 991px) {
+    .blog .box-card {
+        width: calc(50% - 1.5rem);
+    }
+    .blog .list-service {
+        row-gap: 3rem;
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 767px) {
+    .blog .list-service {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .blog .box-card {
+        width: 100%;
+    }
+}
+
+
