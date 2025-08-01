@@ -14,7 +14,6 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    min-width: 600px;
     /* overflow-x: hidden; */
 }
 
@@ -68,7 +67,6 @@ a {
 .box-card .card-img {
     border-radius: 12px 12px 0 0;
     width: 100%;
-    height: 60%;
 }
 
 .box-card .card-img img {
@@ -118,7 +116,6 @@ a {
     display: flex;
     align-items: center;
     padding: 0 2.4rem;
-    min-width: 400px;
     height: 100%;
 }
 
@@ -168,12 +165,6 @@ a {
     position: absolute;
     left: 20px;
     bottom: 6px;
-}
-
-@media (max-width: 767px) {
-    header {
-        display: none;
-    }
 }
 
 /* ================Hero==================== */
@@ -508,39 +499,6 @@ a {
     transition: background-color 0.3s ease;
 }
 
-/* ================ Responsive for Popular ================ */
-/* PC low resolution & Tablet */
-@media (max-width: 991px) {
-    .popular .box-card {
-        /* Hiển thị 2 card mỗi hàng */
-        width: calc(50% - 1.5rem);
-    }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-    .popular .head-popular {
-        flex-direction: column;
-        /* Xếp chồng tiêu đề và nút */
-        align-items: flex-start;
-        gap: 2rem;
-    }
-
-    .popular .head-popular .list-button {
-        align-self: stretch;
-        justify-content: space-between;
-    }
-
-    .popular .box-card {
-        /* Hiển thị 1 card mỗi hàng */
-        width: 100%;
-    }
-
-    .popular .box-card .price-book {
-        margin-bottom: 2rem;
-    }
-}
-
 /* ================Feedback==================== */
 .feedback {
     background-color: #2E2100;
@@ -787,19 +745,149 @@ a {
     transition: background-color 0.3s ease;
 }
 
-/*  --Responsive for Blog--  */
-/* Tablet: 2 columns */
+/* ================ Responsive ================ */
+
+/* PC low resolution & Tablet */
 @media (max-width: 991px) {
+    .popular .box-card {
+        width: calc(50% - 1.5rem);
+    }
+
     .blog .box-card {
         width: calc(50% - 1.5rem);
     }
+
     .blog .list-service {
         row-gap: 3rem;
     }
 }
 
-/* Mobile: 1 column */
+/* Mobile */
 @media (max-width: 767px) {
+
+    /* ---- Header ---- */
+    .header {
+        display: none;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    .hero .hero-body {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .hero .media-block,
+    .hero .content-block {
+        width: 100%;
+    }
+
+    .hero .media-block {
+        order: 2;
+    }
+
+    .hero .content-block {
+        order: 1;
+    }
+
+    .hero .content-block h1 {
+        font-size: 4.8rem;
+        text-align: center;
+    }
+
+    .hero .content-block .desc {
+        text-align: center;
+    }
+
+    .hero .list-button {
+        justify-content: center;
+    }
+
+    .hero .media-block .content-media {
+        position: static;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* ---- Popular ---- */
+    .popular .head-popular {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .popular .head-popular .list-button {
+        align-self: stretch;
+        justify-content: space-between;
+    }
+
+    .popular .box-card {
+        width: 100%;
+    }
+
+    .popular .box-card .price-book {
+        margin-bottom: 2rem;
+    }
+
+    /* ---- Feedback ---- */
+    .feedback-body {
+        flex-direction: column;
+        gap: 4rem;
+        padding: 6rem 0;
+    }
+
+    .feedback .info,
+    .feedback .box-quote {
+        width: 100%;
+    }
+
+    .feedback .info {
+        align-items: center;
+    }
+
+    .feedback .box-quote img {
+        display: none;
+    }
+
+    .feedback .box-quote .quote {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    /* ---- Feature ---- */
+    .feature1,
+    .feature2 {
+        padding: 6.5rem 0;
+        margin-top: 0;
+    }
+
+    .feature .feature-body {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .feature .image-block,
+    .feature .media-block {
+        width: 100% !important;
+    }
+
+    .feature1 .feature-body {
+        flex-direction: column-reverse;
+    }
+
+    .feature1 .image-block {
+        gap: 1.5rem;
+    }
+
+    .feature1 .image-block .feature-img2 {
+        top: 0;
+    }
+
+    /* ---- Blog ---- */
     .blog .list-service {
         flex-direction: column;
         gap: 3rem;
@@ -809,5 +897,3 @@ a {
         width: 100%;
     }
 }
-
-
