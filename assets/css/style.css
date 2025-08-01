@@ -445,6 +445,7 @@ a {
     margin-top: 6.5rem;
 	display: flex;
 	flex-wrap: wrap; /* Cho phép các card xuống dòng */
+    justify-content: space-between;
 	gap: 3rem; /* Tạo khoảng cách giữa các card */
 }
 
@@ -529,6 +530,10 @@ a {
 		/* Hiển thị 1 card mỗi hàng */
 		width: 100%;
 	}
+
+	.blog .box-card {
+		width: 100%;
+	}
 }
 
 /* ================Feedback==================== */
@@ -537,7 +542,8 @@ a {
 }
 
 .feedback-body {
-    height: 40vh;
+    /* Thay height bằng padding để linh hoạt hơn */
+    padding: 9rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -618,8 +624,10 @@ a {
 /* ================Feature==================== */
 /* --Feature 1-- */
 .feature1 {
-    background-color: #FFF;
-    height: 100vh;
+	background-color: #FFF;
+	/* Bỏ height, thay bằng padding để linh hoạt */
+	padding: 6.5rem 0;
+	margin-top: 7rem; /* Thêm khoảng cách với section feedback */
 }
 
 .feature .feature-body {
@@ -679,8 +687,9 @@ a {
 
 /* --Feature 2-- */
 .feature2 {
-    background-color: #FFF;
-    height: 100vh;
+	background-color: #FFF;
+	/* Bỏ height, thay bằng padding để linh hoạt */
+	padding: 6.5rem 0;
 }
 
 
@@ -701,10 +710,9 @@ a {
 
 /* ================Blog==================== */
 .blog {
-    background-color: #FFF;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+	background-color: #FFF;
+	/* Bỏ height, thay bằng padding để linh hoạt */
+	padding: 6.5rem 0;
 }
 
 .blog .blog-body {
@@ -712,9 +720,6 @@ a {
 }
 
 .blog .list-service {
-    /* Xóa height để chiều cao tự động theo nội dung */
-    /* width: 100%; */
-    /* Thuộc tính này không cần thiết vì .blog-body đã có width 100% */
     display: flex;
     justify-content: space-between;
     margin-top: 5.5rem;

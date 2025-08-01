@@ -34,3 +34,20 @@ overflow: hidden;
 .line-clamp-2 {
 --line-clamp: 2;
 }
+
+# Tóm Lại Các Nguyên Tắc Thực Tế
+Chiều cao (Height):
+
+Nên: Dùng height: auto (mặc định) cho hầu hết các section. Dùng padding để tạo khoảng trống.
+Nên: Dùng min-height nếu bạn muốn section có một chiều cao tối thiểu nhưng vẫn có thể giãn ra nếu nội dung nhiều hơn.
+Chỉ dùng khi: Dùng height: 100vh (hoặc calc()) cho section Hero đầu trang.
+Tránh: Dùng height với giá trị cố định (px, rem, vh) cho các section chứa nội dung động.
+Chiều rộng (Width):
+
+Nên: Section cha (.popular, .blog...) có width: 100% (hoặc 100vw như bạn làm).
+Nên: Bên trong có một div.container với max-width (ví dụ: 1200px) và margin: 0 auto để giới hạn chiều rộng nội dung và căn giữa nó trên màn hình lớn. Bạn đã làm điều này rất tốt.
+Responsive:
+
+Sử dụng Flexbox (display: flex, flex-wrap: wrap, justify-content) hoặc CSS Grid để sắp xếp các phần tử bên trong section.
+Sử dụng Media Queries (@media (max-width: ...px)) để thay đổi layout trên các kích thước màn hình khác nhau (ví dụ: chuyển từ 3 cột sang 2 cột, rồi 1 cột).
+Bằng cách áp dụng những nguyên tắc này, trang web của bạn sẽ không chỉ "chuẩn responsive" mà còn rất chuyên nghiệp và dễ dàng để phát triển, bảo trì trong tương lai.
