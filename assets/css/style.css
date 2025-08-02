@@ -162,18 +162,12 @@ a {
 .nav li.active a::after {
     content: "";
     display: block;
-    width: 12px;
-    height: 2px;
+    width: 1.2rem;
+    height: 0.2rem;
     background-color: #171100;
     position: absolute;
-    left: 20px;
-    bottom: 6px;
-}
-
-@media (max-width: 767px) {
-    header {
-        display: none;
-    }
+    left: 2rem;
+    bottom: 0.6rem;
 }
 
 /* ================Hero==================== */
@@ -186,8 +180,8 @@ a {
 
 .hero .hero-body {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     height: 100%;
@@ -199,16 +193,12 @@ a {
     display: flex;
     position: relative;
     width: 40%;
-    min-width: 220px;
-    height: 100%;
 }
 
 .hero .media-block #img-main-hero {
-    width: 95%;
-    height: 95%;
     object-fit: cover;
     border-radius: 24px;
-    flex-shrink: 0;
+    width: 100%;
 }
 
 .hero .media-block .content-media {
@@ -224,8 +214,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 160px;
-    min-height: 180px;
 }
 
 .hero .media-block .list-media {
@@ -239,8 +227,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px;
-    height: 48px;
+    width: 4.8rem;
+    height: 4.8rem;
     border-radius: 50%;
 }
 
@@ -267,6 +255,10 @@ a {
     font-weight: 600;
     line-height: 1.67;
     /* 166.667% */
+}
+
+.hero .media-block .list-about {
+    width: 12rem;
 }
 
 .hero .media-block .list-about .title {
@@ -318,8 +310,7 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: 1.66;
-    min-width: 18rem;
-    padding: 17px 30px;
+    padding: 1.7rem 3rem;
     /* 166.667% */
 }
 
@@ -506,39 +497,6 @@ a {
     background-color: var(--color-main);
     color: #fff;
     transition: background-color 0.3s ease;
-}
-
-/* ================ Responsive for Popular ================ */
-/* PC low resolution & Tablet */
-@media (max-width: 991px) {
-    .popular .box-card {
-        /* Hiển thị 2 card mỗi hàng */
-        width: calc(50% - 1.5rem);
-    }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-    .popular .head-popular {
-        flex-direction: column;
-        /* Xếp chồng tiêu đề và nút */
-        align-items: flex-start;
-        gap: 2rem;
-    }
-
-    .popular .head-popular .list-button {
-        align-self: stretch;
-        justify-content: space-between;
-    }
-
-    .popular .box-card {
-        /* Hiển thị 1 card mỗi hàng */
-        width: 100%;
-    }
-
-    .popular .box-card .price-book {
-        margin-bottom: 2rem;
-    }
 }
 
 /* ================Feedback==================== */
@@ -787,19 +745,133 @@ a {
     transition: background-color 0.3s ease;
 }
 
-/*  --Responsive for Blog--  */
-/* Tablet: 2 columns */
+/* ================ Responsive ================ */
+
+/* PC low resolution & Tablet */
 @media (max-width: 991px) {
+    .hero {
+        height: auto;
+    }
+    
+    .hero .hero-body {
+        flex-direction: column;
+    }
+
+    .hero .media-block {
+        width: 100%;
+        order: 2;
+    }
+
+    .hero .media-block > img {
+        display: none;
+    } 
+
+    .hero .media-block .content-media {
+        position: static;
+        width: 100%;
+    }
+
+    .hero .media-block .list-media {
+        justify-content: center;
+    }
+    .hero .content-block {
+        width: 100%;
+        margin-top: 3rem;
+        text-align: center;
+        order: 1;
+    }
+
+    .hero .stats {
+        justify-content: center;
+    }
+    
+    .hero .content-block .list-button {
+        justify-content: center;
+    }
+
+    /* Popular */
+    .popular .box-card {
+        /* Hiển thị 2 card mỗi hàng */
+        width: calc(50% - 1.5rem);
+    }
+
+    /* Blog */
     .blog .box-card {
         width: calc(50% - 1.5rem);
     }
+
     .blog .list-service {
         row-gap: 3rem;
     }
 }
 
-/* Mobile: 1 column */
+/* Mobile */
 @media (max-width: 767px) {
+
+    /* Header */
+    header {
+        display: none;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .hero .hero-body {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .hero .media-block {
+        width: 100%;
+    }
+
+    .hero .media-block .content-media {
+        align-items: center;
+    }
+
+
+    .hero .content-block {
+        width: 100%;
+        margin-top: 4rem;
+        text-align: center;
+    }
+
+    .hero .content-block h1 {
+        font-size: 4.8rem;
+    }
+
+    .hero .content-block .list-button {
+        justify-content: space-around;
+    }
+
+    .hero .content-block .content-about .stats {
+        justify-content: center;
+    }
+
+    /* Popular */
+    .popular .head-popular {
+        flex-direction: column;
+        /* Xếp chồng tiêu đề và nút */
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .popular .head-popular .list-button {
+        align-self: stretch;
+        justify-content: space-between;
+    }
+
+    .popular .box-card {
+        /* Hiển thị 1 card mỗi hàng */
+        width: 100%;
+    }
+
+    .popular .box-card .price-book {
+        margin-bottom: 2rem;
+    }
+
+    /* Blog */
     .blog .list-service {
         flex-direction: column;
         gap: 3rem;
@@ -809,5 +881,3 @@ a {
         width: 100%;
     }
 }
-
-
