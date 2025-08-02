@@ -506,7 +506,6 @@ a {
 
 .feedback-body {
     /* Thay height bằng padding để linh hoạt hơn */
-    padding: 9rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -529,7 +528,7 @@ a {
     margin-top: 1.8rem;
     color: #F7F7F7;
     font-family: Sen;
-    font-size: 2.4rem;
+    font-size: clamp(2rem,2.5vw,2.5rem);
     font-style: normal;
     font-weight: 700;
     line-height: 1.41;
@@ -537,7 +536,7 @@ a {
 
 .feedback .info p {
     color: #BFBCB2;
-    font-size: 1.4rem;
+    font-size: clamp(1rem,1.5vw,1.5rem);
     font-style: normal;
     font-weight: 400;
     line-height: 1.85;
@@ -577,7 +576,7 @@ a {
 
 .feedback .box-quote .quote {
     color: #FFF;
-    font-size: 2.6rem;
+    font-size: clamp(2.2rem,2.5vw,3rem);
     font-style: italic;
     font-weight: 400;
     line-height: 1.54;
@@ -880,4 +879,17 @@ a {
     .blog .box-card {
         width: 100%;
     }
+
+    /* Feedback */
+    .feedback .info {
+        align-items: center;
+    }
+    .feedback .info p {
+        text-align: center;
+    }
+
+    .feedback .info .dots {
+        text-align: center;
+    }
+
 }
