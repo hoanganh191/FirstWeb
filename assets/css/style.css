@@ -46,7 +46,7 @@ a {
 .heading-lv2 {
     color: #171100;
     font-family: var(--font-heading);
-    font-size: 3.8rem;
+    font-size: clamp(2.5rem, 3.5vw, 3.8rem);
     font-style: normal;
     font-weight: 700;
     line-height: 1.27;
@@ -80,7 +80,7 @@ a {
 
 .desc {
     color: #5F5B53;
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
     font-style: normal;
     font-weight: 400;
     line-height: 1.66;
@@ -528,7 +528,7 @@ a {
     margin-top: 1.8rem;
     color: #F7F7F7;
     font-family: Sen;
-    font-size: clamp(2rem,2.5vw,2.5rem);
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
     font-style: normal;
     font-weight: 700;
     line-height: 1.41;
@@ -536,7 +536,7 @@ a {
 
 .feedback .info p {
     color: #BFBCB2;
-    font-size: clamp(1rem,1.5vw,1.5rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-style: normal;
     font-weight: 400;
     line-height: 1.85;
@@ -576,7 +576,7 @@ a {
 
 .feedback .box-quote .quote {
     color: #FFF;
-    font-size: clamp(2.2rem,2.5vw,3rem);
+    font-size: clamp(2.2rem, 2.5vw, 3rem);
     font-style: italic;
     font-weight: 400;
     line-height: 1.54;
@@ -589,8 +589,6 @@ a {
     background-color: #FFF;
     /* Bỏ height, thay bằng padding để linh hoạt */
     padding: 6.5rem 0;
-    margin-top: 7rem;
-    /* Thêm khoảng cách với section feedback */
 }
 
 .feature .feature-body {
@@ -603,7 +601,6 @@ a {
 /* Image Block */
 .feature .image-block {
     width: 47%;
-    height: 60%;
     display: flex;
     justify-content: space-between;
     gap: 3%;
@@ -652,7 +649,6 @@ a {
 .feature2 {
     background-color: #FFF;
     /* Bỏ height, thay bằng padding để linh hoạt */
-    padding: 6.5rem 0;
 }
 
 
@@ -751,7 +747,7 @@ a {
     .hero {
         height: auto;
     }
-    
+
     .hero .hero-body {
         flex-direction: column;
     }
@@ -761,9 +757,9 @@ a {
         order: 2;
     }
 
-    .hero .media-block > img {
+    .hero .media-block>img {
         display: none;
-    } 
+    }
 
     .hero .media-block .content-media {
         position: static;
@@ -773,6 +769,7 @@ a {
     .hero .media-block .list-media {
         justify-content: center;
     }
+
     .hero .content-block {
         width: 100%;
         margin-top: 3rem;
@@ -783,7 +780,7 @@ a {
     .hero .stats {
         justify-content: center;
     }
-    
+
     .hero .content-block .list-button {
         justify-content: center;
     }
@@ -801,6 +798,35 @@ a {
 
     .blog .list-service {
         row-gap: 3rem;
+    }
+
+    /* feature */
+    /* feature 1 */
+    .feature .feature-body {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .feature .image-block {
+        order: 2;
+        width: 100%;
+    }
+
+    .feature .media-block {
+        order: 1;
+        width: 100%;
+    }
+
+    .feature1 .image-block .feature-img {
+        aspect-ratio: 8 / 9;
+    }
+
+    .feature2 .image-block {
+        width: 100%;
+    }
+
+    .feature2 .image-block img {
+        aspect-ratio: 16 / 9;
     }
 }
 
@@ -884,12 +910,30 @@ a {
     .feedback .info {
         align-items: center;
     }
+
     .feedback .info p {
         text-align: center;
     }
 
     .feedback .info .dots {
         text-align: center;
+    }
+
+    /* feature */
+    /* feature 1 */
+    .feature .feature-body {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .feature .image-block {
+        order: 2;
+        width: 100%;
+    }
+
+    .feature .media-block {
+        order: 1;
+        width: 100%;
     }
 
 }
