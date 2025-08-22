@@ -170,6 +170,21 @@ a {
     bottom: 0.6rem;
 }
 
+.header .nav-toggle {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    z-index: 20;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header .fa-bars {
+    font-size: 2rem;
+}
+
 /* ================Hero==================== */
 .hero {
     height: calc(100vh - 6.2rem);
@@ -832,9 +847,15 @@ a {
 
 /* Mobile */
 @media (max-width: 767px) {
+    .header .nav-toggle {
+        display: block;
+    }
 
-    /* Header */
-    header {
+    .header .nav ul {
+        display: none;
+    }
+
+    .header .action {
         display: none;
     }
 
