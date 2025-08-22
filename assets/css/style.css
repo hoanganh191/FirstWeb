@@ -46,7 +46,7 @@ a {
 .heading-lv2 {
     color: #171100;
     font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 3.5vw, 3.8rem);
+    font-size: clamp(2.5rem, 3vw, 3.8rem);
     font-style: normal;
     font-weight: 700;
     line-height: 1.27;
@@ -853,6 +853,25 @@ a {
 
     .header .nav ul {
         display: none;
+    }
+
+    .header .nav.is-open ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top : 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFFCF4;
+        padding: 2rem 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        align-items: center;
+    }
+
+    .header .nav.is-open .nav a {
+        padding: 1.2rem 2rem;
+        width: 100%;
+        text-align: center;
     }
 
     .header .action {
